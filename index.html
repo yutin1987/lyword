@@ -1,0 +1,205 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>立法委員候選人文字雲</title>
+  <meta name="description" content="Google's material design UI components built with React.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <div>
+    <div id="title" style="font-size: 24px;"></div>
+    <div id="words"></div>
+    <br />
+    <div>國會候選人文字雲的資料，來自於分析候選人過去這段時間在Facebook上的PO文</div>
+    <div>請點選下列 候選人 或 政黨名稱：</div>
+    <div>
+      <a href="?p=綠黨社會民主黨聯盟">綠黨社會民主黨聯盟</a> ▸
+      <a href="?q=苗博雅">苗博雅</a>
+      <a href="?q=呂欣潔">呂欣潔</a>
+      <a href="?q=曾柏瑜">曾柏瑜</a>
+    </div>
+    <div>
+      <a href="?p=時代力量">時代力量</a> ▸ 
+      <a href="?q=洪慈庸">洪慈庸</a>
+      <a href="?q=林昶佐">林昶佐</a>
+      <a href="?q=林昶佐">黃國昌</a>
+    </div>
+    <div>
+      議題 ▸ 
+      <a href="?topic=環保">環保</a>
+      <a href="?topic=經濟">經濟</a>
+      <a href="?topic=教育">教育</a>
+      <a href="?topic=交通">交通</a>
+      <a href="?topic=兩岸">兩岸</a>
+      <a href="?topic=食安">食安</a>
+      <a href="?topic=農業">農業</a>
+      <a href="?topic=藝術">藝術</a>
+      <a href="?topic=科技">科技</a>
+      <a href="?topic=居住">居住</a>
+      <a href="?topic=工會">工會</a>
+      <a href="?topic=健保">健保</a>
+      <a href="?topic=能源">能源</a>
+      <a href="?topic=國會改革">國會改革</a>
+      <a href="?topic=核四">核四</a>
+      <a href="?topic=多元成家">多元成家</a>
+      <a href="?topic=九二共識">九二共識</a>
+      <a href="?topic=台灣獨立">台灣獨立</a>
+      <a href="?topic=長照">長照</a>
+      <a href="?topic=薪資">薪資</a>
+      <a href="?topic=死刑">死刑</a>
+      <a href="?topic=空污">空污</a>
+      <a href="?topic=政黨協商">政黨協商</a>
+      <a href="?topic=貧富差距">貧富差距</a>
+      <a href="?topic=社會福利">社會福利</a>
+      <a href="?topic=兒少">兒少</a>
+      <a href="?topic=投資">投資</a>
+      <a href="?topic=創新">創新</a>
+      <a href="?topic=股市">股市</a>
+      <a href="?topic=綠能">綠能</a>
+      <a href="?topic=廣電三法">廣電三法</a>
+      <a href="?topic=中資">中資</a>
+      <a href="?topic=棒球">棒球</a>
+      <a href="?topic=課綱">課綱</a>
+      <a href="?topic=移民">移民</a>
+      <a href="?topic=警察">警察</a>
+      <a href="?topic=貨貿">貨貿</a>
+      <a href="?topic=文創">文創</a>
+      <a href="?topic=稅制">稅制</a>
+      <a href="?topic=音樂">音樂</a>
+      <a href="?topic=遊戲">遊戲</a>
+      <a href="?topic=產業">產業</a>
+      <a href="?topic=土地">土地</a>
+      <a href="?topic=環境">環境</a>
+      <a href="?topic=媒體">媒體</a>
+      <a href="?topic=原住民">原住民</a>
+      <a href="?topic=徵收">徵收</a>
+      <a href="?topic=透明">透明</a>
+      <a href="?topic=年金">年金</a>
+      <a href="?topic=創業">創業</a>
+      <a href="?topic=觀光">觀光</a>
+      <a href="?topic=托育">托育</a>
+      <a href="?topic=技職">技職</a>
+      <a href="?topic=黨團協商">黨團協商</a>
+      <a href="?topic=責任政治">責任政治</a>
+      <a href="?topic=關說">關說</a>
+      <a href="?topic=公園">公園</a>
+      <a href="?topic=動物">動物</a>
+      <a href="?topic=第三勢力">第三勢力</a>
+      <a href="?topic=弱勢">弱勢</a>
+      <a href="?topic=退休">退休</a>
+      <a href="?topic=財團">財團</a>
+      <a href="?topic=都市">都市</a>
+      <a href="?topic=毒品">毒品</a>
+      <a href="?topic=建設">建設</a>
+      <a href="?topic=司法">司法</a>
+      <a href="?topic=監察">監察</a>
+      <a href="?topic=黨產">黨產</a>
+      <a href="?topic=海洋">海洋</a>
+      <a href="?topic=勞工">勞工</a>
+    </div>
+    <br />
+    <div>資料來源：<a href="http://capitol.tw/" target="_blank">未來國會 http://capitol.tw/</a></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.12/d3.min.js"></script>
+  <script src="d3.layout.cloud.js"></script>
+  <script type="text/javascript">
+  var fill = d3.scale.category20();
+
+  var list = [];
+
+  var topicAry = {1: "環保",2: "經濟",3: "教育",4: "交通",5: "兩岸",6: "食安",7: "農業",8: "藝術",9: "科技",10: "居住",11: "工會",12: "健保",13: "能源",14: "國會改革",21: "核四",22: "多元成家",23: "九二共識",24: "台灣獨立",25: "長照",26: "薪資",27: "死刑",28: "空污",29: "政黨協商",30: "貧富差距",31: "社會福利",32: "兒少",33: "投資",34: "創新",35: "股市",36: "綠能",37: "廣電三法",38: "中資",39: "棒球",40: "課綱",41: "移民",42: "警察",43: "貨貿",45: "文創",46: "稅制",47: "音樂",48: "遊戲",49: "產業",50: "土地",51: "環境",52: "媒體",53: "原住民",54: "徵收",55: "透明",56: "年金",57: "創業",58: "觀光",59: "托育",60: "技職",61: "黨團協商",62: "責任政治",63: "關說",64: "公園",65: "動物",66: "第三勢力",67: "弱勢",68: "退休",69: "財團",70: "都市",71: "毒品",72: "建設",73: "司法",74: "監察",75: "黨產",76: "海洋",78: "勞工"};
+
+  var q = /q=([^&]+)/.exec(location.search);
+  var topic = /topic=([^&]+)/.exec(location.search);
+  var p = /p=([^&]+)/.exec(location.search);
+
+  if (q) {
+    $.getJSON(
+      'http://capitol.tw/gene/cache_dump.php?type=tags&people=' + q[1],
+      function(res) {
+        $('#title').text(decodeURIComponent(q[1]) + ' 候選人提起議題次數的文字雲');
+
+        for (var key in res) {
+          list.push({text: key, size: parseInt(res[key].normal/100, 10)});
+        }
+
+        layout.start();
+      }
+    ).fail(function(err) {
+      console.log(err);
+    });
+  } else if (topic) {
+    $.getJSON(
+      'http://capitol.tw/gene/keyword_search.php?search=' + topic[1],
+      function(res) {
+        $('#title').text(decodeURIComponent(topic[1]) + ' 議題被候選人提起次數的文字雲');
+
+        for (var key in res) {
+          list.push({text: key, size: parseInt(res[key]*10, 10)});
+        }
+
+        layout.start();
+      }
+    ).fail(function(err) {
+      console.log(err);
+    });
+  } else if (p) {
+    $.getJSON(
+      'http://capitol.tw/gene/party_topic.php?parties=15&limit=500&show=0',
+      function(res) {
+        $('#title').text(decodeURIComponent(p[1]) + ' 政黨提起議題次數的文字雲');
+
+        if (res[decodeURIComponent(p[1])]) {
+          var data = res[decodeURIComponent(p[1])];
+          for (var key in data) {
+            list.push({text: topicAry[key], size: parseInt(data[key], 10)});
+          }
+        }
+
+        layout.start();
+      }
+    ).fail(function(err) {
+      console.log(err);
+    });
+  } else {
+  }
+
+
+  var layout = d3.layout.cloud()
+    .size([1024, 640])
+    .words(list)
+    .padding(5)
+    .rotate(function() { return ~~(Math.random() * 2) * 90; })
+    .font("Impact")
+    .fontSize(function(d) { return d.size; })
+    .on("end", draw);
+
+
+  function draw(words) {
+    d3.select("#words").append("svg")
+        .attr("width", layout.size()[0])
+        .attr("height", layout.size()[1])
+        .append("g")
+        .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+        .selectAll("text")
+        .data(words)
+        .enter().append("text")
+        .style("font-size", function(d) { return d.size + "px"; })
+        .style("font-family", "Impact")
+        .style("fill", function(d, i) { return fill(i); })
+        .attr("text-anchor", "middle")
+        .attr("transform", function(d) {
+          return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+        })
+        .text(function(d) { return d.text; });
+  }
+  </script>
+</body>
+
+</html>
