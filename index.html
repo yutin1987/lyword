@@ -126,7 +126,7 @@
         $('#title').text(decodeURIComponent(q[1]) + ' 候選人提起議題次數的文字雲');
 
         for (var key in res) {
-          list.push({text: key, size: parseInt(res[key].normal/100, 10)});
+          list.push({text: key, size: res[key].normal/20 });
         }
 
         layout.start();
@@ -141,7 +141,7 @@
         $('#title').text(decodeURIComponent(topic[1]) + ' 議題被候選人提起次數的文字雲');
 
         for (var key in res) {
-          list.push({text: key, size: parseInt(res[key]*10, 10)});
+          list.push({text: key, size: res[key]*10});
         }
 
         layout.start();
@@ -158,7 +158,7 @@
         if (res[decodeURIComponent(p[1])]) {
           var data = res[decodeURIComponent(p[1])];
           for (var key in data) {
-            list.push({text: topicAry[key], size: parseInt(data[key], 10)});
+            list.push({text: topicAry[key], size: data[key]});
           }
         }
 
