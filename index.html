@@ -172,7 +172,7 @@
 
 
   var layout = d3.layout.cloud()
-    .size([1024, 640])
+    .size([$(document).width() - 30, 480])
     .words(list)
     .padding(5)
     .rotate(function() { return ~~(Math.random() * 2) * 90; })
